@@ -1,0 +1,16 @@
+
+body {
+    /* background-image: url(../assets/armand-khoury-ojOB7J4RlNQ-unsplash.jpg); */
+    background-color: #f7f7f7;
+}
+
+.boxContainer{
+    background-color:rgb(241, 241, 250);
+    display: grid;
+    padding: 10px;
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-bottom: 8%;
+    margin-top: 8%;
+    border-radius: 100px;
+}
