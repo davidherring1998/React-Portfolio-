@@ -23,29 +23,3 @@ p{
     margin-bottom: 80px;
 }
 
- h4 {
-    padding-top: 15px;
-    margin-left: 24px;
-    color: black;
-    font-family: monospace;
-    overflow: hidden; 
-    border-right: .1em solid orange; 
-    white-space: nowrap; 
-    margin: 10 auto; 
-    letter-spacing: .2px; 
-    animation: 
-      typing 5.5s steps(30, end),
-      blink-caret .5s step-end infinite;
-  }
-  
-
-  @keyframes typing {
-    from { width: 0% }
-    to { width: 100% }
-  }
-  
-  /* The typewriter cursor effect */
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    60% { border-color: orange }
-  }

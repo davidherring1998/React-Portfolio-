@@ -1,18 +1,15 @@
 import React from "react";
-import Header from './components/header';
-import Footer from './components/footer';
-import Section from './components/aboutMe';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import Container from "./components/Container";
+import Footer from "./components/footer";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
-    return (
-        <div>
-            {/* <Navbar/> */}
-            <Header/>
-            <Section/>
-            <Footer/>
-        </div>
-    )
+  return (
+    <div>
+      <Container />
+      <Footer />
+    </div>
+  );
 }
 
 export default App;
