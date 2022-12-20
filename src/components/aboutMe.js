@@ -8,7 +8,7 @@ function Section() {
   return (
     <div>
       <div className="boxContainer">
-        <h2>ABOUT ME:</h2>
+        <h2>ABOUT ME</h2>
         <img src={Me} alt="Me"></img>
         <p>
           Hello! My name is David Herring and I am a Full-Stack Web-developer

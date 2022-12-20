@@ -11,7 +11,7 @@ import Weather from "../assets/weather.jpeg";
 function Portfolio() {
   return (
     <div className="boxContainer" id="ImgContainer">
-      <h2 id="header">MY PORTFOLIO:</h2>
+      <h2 id="header">MY PORTFOLIO</h2>
 
       <section>
         <a href="https://dadjokesgalore.herokuapp.com/" target='blank'>

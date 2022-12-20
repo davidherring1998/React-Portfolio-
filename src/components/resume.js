@@ -1,23 +1,48 @@
 import React from "react";
+import "../styles/resume.css";
+import birds from '../assets/birds.jpg'
+import { BsCloudDownload } from "react-icons/bs";
+import {TiHtml5} from "react-icons/ti"
+import {IoLogoCss3} from "react-icons/io"
+import {IoLogoJavascript} from 'react-icons/io'
+import {DiReact} from 'react-icons/di'
+import {SiNodedotjs} from 'react-icons/si'
+import {SiMysql} from 'react-icons/si'
+import{SiMongodb} from 'react-icons/si'
+import {BsServer} from 'react-icons/bs'
 
 function Resume() {
   return (
-    <div>
-      <p>
-        Hello! My name is David Herring and I am a Full-Stack Web-developer! I
-        am currently enrolled in Vanderbilt's coding boot-camp !
-      </p>
-      <p>
-        is simply dummy text of the printing and typesetting industry. Lorem
-        Ipsum has been the industry's standard dummy text ever since the 1500s,
-        when an unknown printer took a galley of type and scrambled it to make a
-        type specimen book. It has survived not only five centuries, but also
-        the leap into electronic typesetting, remaining essentially unchanged.
-        It was popularised in he 1960s with the release of Letraset sheets
-        containing Lorem Ipsum passages, and more recently with desktop
-        publishing software like Aldus PageMaker including versions of Lorem
-        Ipsum.
-      </p>
+    <div className="boxContainer" id="newContainer">
+      <h2>My Resume</h2>
+      <section>
+        <h3>Front-End: </h3>
+        <ul>
+          <li>HTML <TiHtml5/></li>
+          <li>CSS <IoLogoCss3/></li>
+          <li>JavaScript <IoLogoJavascript/></li>
+          <li>React <DiReact/> </li>
+        </ul>
+
+        <h3>Back-End: </h3>
+        <ul>
+          <li>Express <BsServer/> </li>
+          <li>Node <SiNodedotjs/></li>
+          <li>MySQL <SiMysql/></li>
+          <li>MongoDB <SiMongodb/> </li>
+        </ul>
+
+        {/* <img src={birds} alt="bird" className="birds" /> */}
+        <h4>
+          Resume
+          <a
+            href="https://drive.google.com/file/d/1P9RGQVR6l1TyJ6Pl7qbxMaLsQIABwpMy/view?usp=sharing"
+            target="blank"
+          >
+            <BsCloudDownload />
+          </a>
+        </h4>
+      </section>
     </div>
   );
 }
