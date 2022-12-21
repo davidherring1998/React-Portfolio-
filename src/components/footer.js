@@ -1,5 +1,5 @@
 import React from "react";
-import { icons } from "react-icons";
+// import { icons } from "react-icons";
 import { AiOutlineGithub} from 'react-icons/ai';
 import { AiFillLinkedin} from 'react-icons/ai';
 import { BsStackOverflow } from 'react-icons/bs';
@@ -7,7 +7,7 @@ import { GiHearts } from 'react-icons/gi';
 import {AiFillTwitterCircle} from 'react-icons/ai'
 const styles = {
   footer: {
-    // position: "sticky",
+    // position: "fixed",
     left: 0,
     bottom: 0,
     width: "100%",
@@ -24,7 +24,6 @@ const styles = {
   name: {
     color: '#d9534f',
     fontSize: '12px',
-    marginBottom: '2px'
   }
 };
 

@@ -1,5 +1,5 @@
 import React from "react";
-import Me from "../assets/me.jpeg";
+import Me from "../assets/profilePicture.JPG";
 import "../styles/aboutMe.css";
 import "../styles/container.css";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -13,8 +13,7 @@ function Section() {
         <p>
           Hello! My name is David Herring and I am a Full-Stack Web-developer
           based out of middle Tennessee! I am currently enrolled in Vanderbilt's
-          coding boot-camp! I currently have one year of experience coding with
-          HTML, CSS, and JavaScript and I am seeking my first job in the web
+          coding boot-camp! I am seeking my first job in the web
           development field!
         </p>
       </div>

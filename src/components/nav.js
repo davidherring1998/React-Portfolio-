@@ -1,5 +1,6 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "@fontsource/open-sans"
 import { Navbar, Nav, Container } from "react-bootstrap";
 
 const styles = {
@@ -10,12 +11,15 @@ const styles = {
   tab: {
     paddingLeft: "5%",
   },
+  bar: {
+    height: '65px'
+  }
 };
 
 function NavTabs({ currentPage, handlePageChange }) {
   return (
     <div>
-      <Navbar bg="dark" variant="dark" sticky="top">
+      <Navbar bg="dark" variant="dark" sticky="top" style={styles.bar}>
         <Container>
           <Navbar.Brand href="#" style={styles.name}>
             {/* {"David Herring"} */}

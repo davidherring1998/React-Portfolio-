@@ -1,23 +1,70 @@
 import React from "react";
+import { useState } from "react";
+import '../styles/contact.css'
 
-function Contact () {
+function Contact() {
+
+
+  const [values, setValues] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const [submitted, setSubmitted] = useState(false);
+
+  const [valid, setValid] = useState(false)
+
+  const handleName = (e) => {
+    setValues({...values, name: e.target.value})
+  }
+
+  const handleEmail = (e) => {
+    setValues({...values, email: e.target.value})
+  }
+
+  const handleMessage = (e) => {
+    setValues({...values, message: e.target.value})
+  }
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if(values.name && values.email && values.message){
+      setValid(true)
+    }
+    setSubmitted(true)
+  }
   return (
-    <div>
-      <p>
-        Hello! My name is David Herring and I am a Full-Stack Web-developer! I
-        am currently enrolled in Vanderbilt's coding boot-camp !
-      </p>
-      <p>
-        is simply dummy text of the printing and typesetting industry. Lorem
-        Ipsum has been the industry's standard dummy text ever since the 1500s,
-        when an unknown printer took a galley of type and scrambled it to make a
-        type specimen book. It has survived not only five centuries, but also
-        the leap into electronic typesetting, remaining essentially unchanged.
-        It was popularised in he 1960s with the release of Letraset sheets
-        containing Lorem Ipsum passages, and more recently with desktop
-        publishing software like Aldus PageMaker including versions of Lorem
-        Ipsum.
-      </p>
+    <div className="boxContainer" id="form-container">
+      <h2>Contact </h2>
+      {submitted && valid ? <div className="submitMessage">Success! Thank you for your submission</div> : null}
+      <form onSubmit={handleSubmit} className='form'>
+        <input
+        onChange={handleName}
+        value={values.name}
+        className="form-field"
+        placeholder="First name .."
+        name="name" />
+        {submitted && !values.name ? <span>Please enter a name</span> : null }
+        <input 
+        onChange={handleEmail}
+        value={values.email} 
+        className="form-field" 
+        placeholder="Email" 
+        name="email" />{" "}
+        {submitted && !values.email ? <span>Please enter a valid email</span> : null}
+        <input
+        onChange={handleMessage}
+        value={values.message} 
+        className="form-field"
+        placeholder="Message.."
+        name="message" />
+        { submitted && !values.message ? <span>Please enter a message</span> : null}
+       <input 
+       className="submit-btn"
+       type="submit"
+        />
+      </form>
     </div>
   );
 }
