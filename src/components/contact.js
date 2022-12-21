@@ -33,6 +33,7 @@ function Contact() {
       setValid(true)
     }
     setSubmitted(true)
+  
   }
   return (
     <div className="boxContainer" id="form-container">
@@ -43,23 +44,23 @@ function Contact() {
         onChange={handleName}
         value={values.name}
         className="form-field"
-        placeholder="First name .."
+        placeholder="Name.."
         name="name" />
         {submitted && !values.name ? <span>Please enter a name</span> : null }
         <input 
         onChange={handleEmail}
         value={values.email} 
         className="form-field" 
-        placeholder="Email" 
+        placeholder="Email.." 
         name="email" />{" "}
         {submitted && !values.email ? <span>Please enter a valid email</span> : null}
         <input
         onChange={handleMessage}
         value={values.message} 
         className="form-field"
-        placeholder="Message.."
+        placeholder="Subject.."
         name="message" />
-        { submitted && !values.message ? <span>Please enter a message</span> : null}
+        { submitted && !values.message ? <span>Please enter a subject</span> : null}
        <input 
        className="submit-btn"
        type="submit"
